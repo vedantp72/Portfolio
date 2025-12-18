@@ -1,0 +1,44 @@
+import { motion } from 'framer-motion'
+import { skills, assets  } from '../assets/assets'
+import { span } from 'framer-motion/client'
+
+function Skills() {
+    return (
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{ once: true }}
+            id='skills'
+            className='py-20 bg-dark-200'>
+            <div className='container mx-auto px-6'>
+                <h2 className='text-center font-bold text-3xl mb-4 '>My
+                    <span className='text-fuchsia-500'>Skills</span> </h2>
+                <p className='text-center text-gray-400 max-w-2xl mx-auto mb-16'>Technologies I work with to bring ideas to life</p>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto'>
+                    {
+                        skills.map((skill, index) => (
+                            <div key={index} className='bg-dark-300 rounded-2xl
+                        p-6 hover:-translate-y-2 transition duration-300
+                        cursor-pointer'>
+                                <div className='flex items-center mb-4'>
+                                    <skill.icon className='w-12 h-12 text-fuchsia-500 mr-6' />
+                                    <h3 className='text-xl font-semibold mb-2'>{skill.title}</h3>
+                                </div>
+                                <p className='text-sm text-gray-400 mb-4'>{skill.description}</p>
+                                <div className='flex flex-wrap gap-1 mt-4'>
+                                    {
+                                        skill.tags.map((tech) => (
+                                            <span key={tech} className={`px-3 py-1 text-sm rounded-full bg-dark-400 mr-2 ${skill.className}`}>{tech}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </motion.div>
+    )
+}
+
+export default Skills
