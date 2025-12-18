@@ -17,7 +17,7 @@ function Mainpage() {
         {/* left side container */}
         <div className='md:w-1/2 mb-10 md:mb-0'>
           <h1 className='text-4xl md:text-6xl font-bold mb-4'>Hi, I'm
-            <span className='text-fuchsia-500'>Vedant Patel</span></h1>
+            <span className='text-fuchsia-500 ml-3'>Vedant Patel</span></h1>
           <h2 className='text-2xl md:text-4xl font-semibold mb-4 typewriter'>Front-End Developer | UI/UX Designer</h2>
           <p className='text-lg  text-gray-300 mb-8'>Passionate Front-End developer specializing in creating dynamic and beautiful web applications.</p>
 
