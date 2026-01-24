@@ -37,9 +37,9 @@ function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: 'easeOut' }}
             viewport={{ once: false, amount: 0.2 }}
-            className='py-10'>
+            className=''>
             <div className='text-lg text-gray-300 rounded-2xl p-2'>
-              <div className='bg-dark-300 rounded-2xl p-6 md:w-240'>
+              <div className='bg-dark-300 rounded-2xl p-5 md:w-240'>
               <h3 className='text-2xl text-white font-semibold mb-4'>My Journey</h3>
               <p className='mb-8'>Hello! I'm <span className='text-fuchsia-500'>Vedant Patel</span>, a passionate Front-End Developer with a 2+ years of experience in creating dynamic and user-friendly web applications. </p>
               <p>With a strong foundation in HTML, CSS, and JavaScript, I have honed my skills in modern frameworks like React.js to build responsive and interactive web applications. I thrive on challenges and continuously seek to learn and grow in this ever-evolving field.</p>
