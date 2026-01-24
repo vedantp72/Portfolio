@@ -21,7 +21,7 @@ function AboutPage() {
         <div className='flex flex-col md:flex-row items-center gap-12'>
 
           {/* Image */}
-          <div className='md:w-1/2 rounded-2xl overflow-hidden'>
+          {/* <div className='md:w-1/2 rounded-2xl overflow-hidden'>
             <motion.img
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ function AboutPage() {
               viewport={{ once: false, amount: 0.2 }}
               className=' rounded-2xl w-90 h-full object-cover'
               src={assets.profileImg} alt="ProfileImg" />
-          </div>
+          </div> */}
 
           {/* About/Journey/text-content */}
           <motion.div
